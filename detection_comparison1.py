@@ -19,7 +19,7 @@ def parentpath1(path=__file__, f=0):
     return str(os.path.abspath(""))
 
 def main():
-    '''
+    
     #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     #1. detect change point
     for i in range(1):
@@ -87,7 +87,7 @@ def main():
                                 new_dir_path1 = f'dissim_{me}_{data_name}_{M}_{lag_i}'
                                 os.makedirs(new_dir_path1, exist_ok=True)
                                 np.savetxt(f'{new_dir_path1}/{data_name}_{me}_w{window_length}_o{order}_l{lag_i}_d{M}_s2.csv', score, delimiter=',')
-    '''
+    
     #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     #2. calculate AUC and F1-score
     mode = "ssa_theta1"
